@@ -1,5 +1,8 @@
 class Person{
     moveTo(){
+
+    }
+    shout(){
         
     }
 }
