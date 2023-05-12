@@ -1,3 +1,5 @@
+const Person = require('../src/shouty')
+
 const { Given, When, Then } = require('@cucumber/cucumber')
 
 Given('Lucy is located {int} metres from Sean', function (distance) {
@@ -5,7 +7,7 @@ Given('Lucy is located {int} metres from Sean', function (distance) {
     // console.log(distance)
     this.Lucy = new Person;
     this.sean = new Person;
-    this.Lucy.moveT(distance)
+    this.Lucy.moveTo(distance)
 
     return 'pending'
   })
