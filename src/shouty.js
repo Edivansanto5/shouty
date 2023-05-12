@@ -1,9 +1,9 @@
 class Person{
-    moveTo(){
+    moveTo(distance){
 
     }
-    shout(){
-        
+    shout(message){
+
     }
 }
 module.exports = Person;
