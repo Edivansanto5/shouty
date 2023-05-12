@@ -1,8 +1,12 @@
 const {Given,When,Then} = require("@cucumber/cucumber");
 
   Given('Lucy is located {int} metres from Sean', function (distance) {
-    console.log('Lucy estar á',distance,'Metros de distancia')
-    return 'pending';
+    this.lucy = new Person;
+    this.sean = new Person;
+    this.lucy.moveTo(distance)
+    // console.log(distance)
+    // console.log('Lucy estar á',distance,'Metros de distancia')
+    // return 'pending';
   });
 
 
