@@ -5,6 +5,9 @@ class Person{
     shout(message) {
 
     }
+    messagesHeard() {
+        return []
+    }
 
 }
 module.exports = Person;
