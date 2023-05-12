@@ -1,8 +1,7 @@
 const {Given,When,Then} = require("@cucumber/cucumber");
 
-  Given('Lucy is located {int} metres from Sean', function (int) {
-    // Given('Lucy is located {float} metres from Sean', function (float) {
-    // Write code here that turns the phrase above into concrete actions
+  Given('Lucy is located {int} metres from Sean', function (distance) {
+    console.log('Lucy estar á',distance,'Metros de distancia')
     return 'pending';
   });
 
