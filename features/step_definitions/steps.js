@@ -10,10 +10,9 @@ const {Given,When,Then} = require("@cucumber/cucumber");
     // return 'pending';
   });
 
-
-  When('Sean shouts {string}', function (string) {
+  When('Sean shouts {string}', function (message) {
     // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    this.sean.shout(message)
   });
 
 
