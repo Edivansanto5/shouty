@@ -1,6 +1,6 @@
 class Person{
-    moveTo(){
-        
+    moveTo(distance) {
+
     }
 
 }
