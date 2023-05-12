@@ -11,8 +11,8 @@ Given('Lucy is located {int} metres from Sean', function (distance) {
   })
   
   When('Sean shouts {string}', function (message) {
-
-    return 'pending'
+    this.sean.shout(message)
+    
   })
   
   Then('Lucy hears Sean\'s message', function () {
