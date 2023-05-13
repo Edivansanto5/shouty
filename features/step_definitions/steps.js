@@ -19,3 +19,4 @@ Then('Lucy hears Sean\'s message', function () {
     assertThat(this.lucy.messagesHeard(), is([this.message]))
 
 });
+console.log('teste');
