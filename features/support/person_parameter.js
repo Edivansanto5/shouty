@@ -1,7 +1,10 @@
-const Person = require('@cucumber/cucumber')
-const {defineParameterType} = require('@cucumber/cucumber')
+
+const { defineParameterType } = require('@cucumber/cucumber')
+
+const Person = require('../../src/shouty')
 
 defineParameterType({
     name:'person',
-    regexp:'/Lucy|Sean/',
+    regexp:/Lucy|Sean/,
+    transformer: name => new Person(name)
 })
