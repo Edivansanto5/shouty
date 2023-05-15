@@ -3,9 +3,11 @@ const {Given,When,Then} = require("@cucumber/cucumber");
 const { assertThat, is } = require('hamjest')
 
 Given('Lucy is located {int} metres from Sean', function (distance) {
-    this.lucy = new Person;
-    this.sean = new Person;
-    this.lucy.moveTo(distance)
+    console.log(`Lucy is ${distance * 100} centimetres from Sean`)
+
+    // this.lucy = new Person;
+    // this.sean = new Person;
+    // this.lucy.moveTo(distance)
   
 });
 
