@@ -1,7 +1,7 @@
 
 const {Given,When,Then} = require("@cucumber/cucumber");
 
-Given('{person}is located/standing  {int} metre(s) from Sean', function (Lucy , distance) {
+Given('{person} is located/standing  {int} metre(s) from Sean', function (Lucy , distance) {
     console.log(`Lucy is ${distance * 100} centimetres from sean`)
 });
 
